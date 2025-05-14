@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <style>
+   
+   canvas#hypotrochoidCurveCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none; /* let clicks pass through */
+  }
+
+  .page-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  </style>
+</head>
+<body>
+  <canvas id="hypotrochoidCurveCanvas"></canvas>
+
+  <div>
+    <!-- Header -->
+    <header>
+    </header>
+    <!-- Main Content -->
+    <main>
+    </main>
+    <!-- Footer -->
+    <footer>
+    </footer>
+  </div>
+
+  <!-- Load animation script from external file -->
+  <script src="/js/hypotrochoid.js" defer></script>
+</body>
+
+</html> 
