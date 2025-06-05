@@ -10,7 +10,7 @@ class HypotrochoidCurve {
         { radius1: 270, radius2: 180, d: 150, colorIndex: 0 },
         { radius1: 150, radius2: 60, d: 45, colorIndex: 1 }
       ];
-      // Lighter grayscale palette for better contrast
+      
       this.colors = ["#CCCCCC", "#E6E6E6", "#FFFFFF"];
       this.speed = 0.05;
       this.isSpeedBoosted = false;
@@ -66,8 +66,8 @@ class HypotrochoidCurve {
       }
   
       ctx.strokeStyle = this.colors[colorIndex];
-      ctx.lineWidth = 2.5; // thicker lines for better visibility
-      ctx.globalAlpha = 0.4; // less transparent for brighter lines
+      ctx.lineWidth = 2.5;
+      ctx.globalAlpha = 0.4;
       ctx.stroke();
     }
   
@@ -79,7 +79,6 @@ class HypotrochoidCurve {
   
     animate() {
       const ctx = this.ctx;
-      // Subtle trailing effect against dark background
       ctx.fillStyle = "#111111";
       ctx.globalAlpha = 0.1;
       ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
